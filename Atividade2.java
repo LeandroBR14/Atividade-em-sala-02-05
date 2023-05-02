@@ -1,34 +1,28 @@
-﻿public class Atividade2 {
-    public static void main(String[] args) {
-        int intMax1 = intMax(1, 2, 3);
-        int intMax2 = intMax(1, 3, 2);
-        int intMax3 = intMax(3, 2, 1);
+﻿/*
+Tarefa 2. Dado dois valores inteiros, retornar a sua soma. A menos que os dois valores sejam os mesmos, então retorne o dobro de sua soma.
+*/
 
-        System.out.println(intMax1);
-        System.out.println(intMax2);
-        System.out.println(intMax3);
+public class Atividade2 {
+    public static void main(String[] args) {
+        int soma1 = sumDouble(1, 2);
+        int soma2 = sumDouble(3, 2);
+        int soma3 = sumDouble(2, 2);
+
+        System.out.println(soma1);
+        System.out.println(soma2);
+        System.out.println(soma3);
     }
 
-    public static int intMax(int a, int b, int c) {
-        if (a <= b && a <= c) {
-            if (b <= c) {
-                return c;
-            } else {
-                return b;
-            }
-        } else if (b <= a && b <= c) {
-            if (a <= c) {
-                return c;
-            } else {
-                return a;
-            }
+    public static int sumDouble(int a, int b) {
+        int soma = a + b;
+        if (a == b) {
+            soma = 2 * soma;
+
         } else {
-            if (a <= b) {
-                return b;
-            } else {
-                return a;
-            }
+            soma = soma;
+            
         }
+        return soma;
 
     }
 }
