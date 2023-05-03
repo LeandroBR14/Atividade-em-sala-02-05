@@ -18,9 +18,7 @@ public class Atividade2 {
         if (a == b) {
             soma = 2 * soma;
 
-        } else {
-            soma = soma;
-            
+        } else { 
         }
         return soma;
 
